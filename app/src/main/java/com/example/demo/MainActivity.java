@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             mPlayer = new Player(this, R.raw.chirp);
         }
         catch(Exception e){
-            System.out.println("Exception");
+            System.out.println("Exception Occured");
             assert (false);
         }
         mRecorder = new Recorder(Environment.getExternalStorageDirectory().getAbsolutePath(), this);
