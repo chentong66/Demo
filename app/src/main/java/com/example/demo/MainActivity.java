@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private MediaPlayer mediaPlayer;
+  //  private MediaPlayer mediaPlayer;
     private Recorder mRecorder;
     private Player mPlayer;
     @Override
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       mediaPlayer = MediaPlayer.create(this, R.raw.chirp);
+     //  mediaPlayer = MediaPlayer.create(this, R.raw.chirp);
         try {
             mPlayer = new Player(this, R.raw.chirp);
         }
@@ -37,12 +37,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn_pause.setOnClickListener(new View.OnClickListener() {
+  /*      btn_pause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mediaPlayer.pause();
             }
         });
+   */
 
         btn_stop.setOnClickListener(new View.OnClickListener() {
             @Override
